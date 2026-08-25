@@ -7,7 +7,8 @@
 body {
     margin-top: 30px;
     font-family: 'Inter', sans-serif;
-    background-color: rgb(20, 19, 19); /* Tom escuro elegante igual ao modelo */
+    background-color: rgb(20, 19, 19);
+    /* Tom escuro elegante igual ao modelo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,8 @@ body {
 }
 
 .main-container {
-    background-color: rgba(60, 60, 60, 0.25); /* Fundo translúcido do card */
+    background-color: rgba(60, 60, 60, 0.25);
+    /* Fundo translúcido do card */
     border-radius: 12px;
     max-width: 450px;
     width: 100%;
@@ -82,7 +84,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 0.8rem;
     width: 100%;
     padding: 0;
 }
@@ -91,9 +93,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(70, 67, 67, 0.884);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(61, 59, 59, 0.884);
     color: hsl(0, 18%, 97%);
     border-radius: 50%;
     text-decoration: none;
@@ -115,7 +117,8 @@ h1 {
     height: 22px;
     object-fit: contain;
     position: absolute;
-    left: 20px; /* Mantém a logo fixa na esquerda do botão */
+    left: 20px;
+    /* Mantém a logo fixa na esquerda do botão */
 }
 
 /* --- EFEITO DE HOVER INDIVIDUAL POR POSIÇÃO DA LISTA --- */
@@ -201,17 +204,22 @@ h1 {
 
 @media (max-width: 480px) {
     body {
-        margin-top: 10px; /* Reduz a margem superior no celular */
-        padding: 0 15px;  /* Garante um respiro nas laterais da tela do celular */
+        margin-top: 10px;
+        /* Reduz a margem superior no celular */
+        padding: 0 15px;
+        /* Garante um respiro nas laterais da tela do celular */
     }
 
     .main-container {
-        padding: 25px 20px; /* Diminui o espaçamento interno do card no mobile */
-        gap: 15px;          /* Reduz um pouco o espaço entre os elementos */
+        padding: 25px 20px;
+        /* Diminui o espaçamento interno do card no mobile */
+        gap: 15px;
+        /* Reduz um pouco o espaço entre os elementos */
     }
 
     h1 {
-        font-size: 1.4rem;  /* Ajusta o tamanho do título para não quebrar feio */
+        font-size: 1.4rem;
+        /* Ajusta o tamanho do título para não quebrar feio */
     }
 
     .p {
@@ -222,5 +230,13 @@ h1 {
     .link-item {
         font-size: 15px;
         padding: 12px;
+    }
+}
+
+@media (min-width: 250px) {
+    .social-links-list.social-links-list li a {
+        gap: 0.1rem;
+        width: 30px;
+        height: 30px;
     }
 }
