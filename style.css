@@ -196,3 +196,31 @@ h1 {
     background-color: hsl(76, 98%, 48%);
     color: hsl(0, 0%, 20%);
 }
+
+/* --- RESPONSIVIDADE PARA MOBILE --- */
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 10px; /* Reduz a margem superior no celular */
+        padding: 0 15px;  /* Garante um respiro nas laterais da tela do celular */
+    }
+
+    .main-container {
+        padding: 25px 20px; /* Diminui o espaçamento interno do card no mobile */
+        gap: 15px;          /* Reduz um pouco o espaço entre os elementos */
+    }
+
+    h1 {
+        font-size: 1.4rem;  /* Ajusta o tamanho do título para não quebrar feio */
+    }
+
+    .p {
+        font-size: 15px;
+    }
+
+    /* Ajusta o tamanho dos botões de links de apoio se necessário */
+    .link-item {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
