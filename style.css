@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(20, 19, 19); /* Tom escuro elegante igual ao modelo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container {
+    background-color: rgba(60, 60, 60, 0.25); /* Fundo translúcido do card */
+    border-radius: 12px;
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 20px;
+    border: 1px solid hsla(75, 94%, 57%, 0.2);
+}
+
+.avata-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid hsla(75, 94%, 57%, 0.4);
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+}
+
+img.avatar:hover {
+    box-shadow: 0 0 15px hsl(75, 94%, 57%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+.p {
+    color: hsl(75, 94%, 57%);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pp {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* --- NAV 1: REDES SOCIAIS --- */
+
+.social-nav {
+    width: 100%;
+}
+
+.social-links-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+    padding: 0;
+}
+
+.social-links-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(70, 67, 67, 0.884);
+    color: hsl(0, 18%, 97%);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 14px;
+}
+
+/* Controla o tamanho do ícone dentro do link de apoio */
+.link-item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    position: absolute;
+    left: 20px; /* Mantém a logo fixa na esquerda do botão */
+}
+
+/* --- EFEITO DE HOVER INDIVIDUAL POR POSIÇÃO DA LISTA --- */
+
+/* 1. Facebook (Primeiro item) */
+.social-links-list li:nth-child(1) a:hover {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+/* 2. Instagram (Segundo item) */
+.social-links-list li:nth-child(2) a:hover {
+    background-color: #fe7607;
+    color: #ffffff;
+}
+
+/* 3. YouTube (Terceiro item) */
+.social-links-list li:nth-child(3) a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* 4. TikTok (Quarto item) */
+.social-links-list li:nth-child(4) a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #25f4ee;
+}
+
+/* 5. Spotify (Quinto item) */
+.social-links-list li:nth-child(5) a:hover {
+    background-color: #1db954;
+    color: #ffffff;
+}
+
+/* 6. Telegram (Sexto item) */
+.social-links-list li:nth-child(6) a:hover {
+    background-color: #0088cc;
+    color: #ffffff;
+}
+
+/* --- NAV 2: LINKS DE APOIO (Estilo Linktree) --- */
+
+.support-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-item {
+    background-color: rgba(70, 67, 67, 0.884);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: hsl(0, 18%, 97%);
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid hsla(75, 81%, 51%, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-item:hover {
+    background-color: hsl(76, 98%, 48%);
+    color: hsl(0, 0%, 20%);
+}
